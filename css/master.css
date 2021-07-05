@@ -1,117 +1,147 @@
-.main-bg {
-    height: 100vh;
-    background: linear-gradient(rgba(66,148,136,1) 15%, rgba(219,219,211,1) 15%);
+
+.main-bg{
+    background: linear-gradient(rgba(66,148,136,1) 20%, rgba(219,219,211,1) 20%);
     background-repeat:no-repeat;
+    height: 100vh;
 }
-
-.users-section {
-    height: 90vh;
-    border: 1px solid black
-
-}
-.chat-section {
-    height: 90vh;
+.users-section{
     border: 1px solid black;
-
-}
-.main-user {
-    background-color: rgba(219,219,211,1)
-}
-.main-user img {
-    width: 100px;
-    border-radius: 50px;
-    padding: 10px;
-}
-.main-user span {
-    font-size: larger;
-}
-.main-user-setting {
-    font-size: x-large;
-    float: right;
-    padding: 30px;
-}
-.mex {
-    padding: 0px 15px 0px 15px;
-}
-.notification {
-    background-color: rgb(125, 195, 225);
-}
-.notification-bell {
-    vertical-align: 10px;
-    font-size: x-large;
-    padding: 15px;
-    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
     background-color: white;
-    color: cornflowerblue;
+    border-radius: 25px;
+}
+.user-box, .user-content{
+    border-radius: 25px; 
+}
+.user-content {
+    background-color: white;
+}
+.mine-box span{
+    font-size: 20px;
+    font-weight: 500;
+}
+.icon-box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.user-img{
+    width: 70px;
+    display: inline-block;
+}
+.user-box img, .user-chat img, .contacts-list img{
+    width: 100%;
+    border-radius: 50px;
+}
+.contacts-list img{
+    width: 70px;
+    margin: 10px;
+    
+}
+.contacts-list li{
+    list-style: none;
+}
+.contacts-chat{
+    cursor: pointer;
+    border-bottom: 1px solid black;
+}
+.contacts-list ul{
+    padding: 0;
+}
+
+.alert-box i{
+   font-size: 20px;
+   padding: 20px;
+   background-color: white;
+   border-radius: 50px;
+   color:#aadaff ;
+   
+}
+.alert-box{
+    background-color: #aadaff;
+    height: 80px;
+}
+
+.alert-box span{
+    font-size: 15px;
+    display: block;
     margin-left: 15px;
 }
-.notification div {
-    display: inline-block;
-    padding-left: 15px;
+.alert-box a {
+    margin-left: 15px;
 }
-.text-notification {
-    padding: 15px;
-    margin-left: 25px;
+#notification{
+    font-weight: 700;
 }
-.notification h6 {
-    text-decoration: underline;
+a{
+    color: black;
 }
-.find-chat {
-    padding: 15px 25px 15px 20px;
+.search-box input{
+    border: none;
+    width: 90%;
 }
-.find-chat i {
-    padding: 5px;
-    font-size: 20px;
-}
-.search-box {
-    width: 250px;
-    border: 0;
-    padding: 5px;
-}
-.inner-find-chat {
-    padding: 10px;
-    background-color: white;
-
-}
-.users-pics {
-    width: 100px;
-    border-radius: 50px;
-    padding: 10px;
-}
-.main-contact-chat-buttons {
-    float: right;
-    padding: 30px;
-    font-size: x-large;
-}
-.chat-section-user-pic {
-    float: left;
-}
-.main-user-info {
-    float: left;
-    padding: 25px;
-}
-.chat {
-    height: 970px;
-    background-image: url("../img/mine.jpg");
-}
-.message-box {
-    padding: 5px;
-    width: 620px;
+.search-box{
+    border: 1px solid grey;
     border-radius: 25px;
-    border: 0;
+    
+}
+.user-chat span{
+    display: inline-block;
+    
+}
+.second-icon-box{
+    display: flex;
+    justify-content: space-around;
+}
+.main{
+    background-image: url(../img/mine.jpg) ;
+    position: relative;
+    border: 1px solid black;
+    border-radius: 25px;
+    
+}
+.message-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.date-time{
+    font-size: 10px;
+    text-align: right;
+}
+.sentMessage{
+    width: 50%;
+    background-color:lightgreen;
+    height: 50px;
+    border-radius: 10px;
+    align-self: flex-end;
+    margin-top: 20px;
+    padding: 10px; 
+}
+.receivedMessage{
+    width: 50%;
+    background-color:white;
+    height: 50px;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 10px;    
+}
+.chat-box{
+    background-color: white;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 0px;
+    border-radius: 25px;
 
 }
-.message-box-container {
-    padding: 15px;
-}
-.emojis {
-    padding: 20px 30px;
-    font-size: larger;
-}
-.vocal-note {
-    padding: 20px;
-    font-size: larger;
-}
-.chat-contetn-area {
-    border-top:  1dpx solid black;
+.message input{
+    width: 100%;
+    border-radius: 25px;
+    padding: 5px;
+    border: 1px solid slategray;
 }
